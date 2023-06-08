@@ -1,22 +1,35 @@
 .home {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: #060047;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .nav {
-    top: 2%;
-    position: fixed;
+    top: .5%;
+    position: absolute;
     display: flex;
     align-items: center;
     flex-direction: row;
     width: 100%;
-    height: 10%;
+    height: 1.5%;
     background-color: #00317D;
 }
 
-.nav h3 {
+.title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1.5%;
+    background-color: #00317D;
+}
+
+.titleH3 {
     position: absolute;
     left: 5%;
     color: #00E4BE;
@@ -25,7 +38,7 @@
     font-size: 1.5em;
 }
 
-.buttonContainer{
+.buttonContainer {
     position: absolute;
     right: 0;
     display: flex;
@@ -44,4 +57,306 @@
     width: auto;
     font-size: 1em;
     cursor: pointer;
+}
+
+.buttonContainer button:hover {
+    transform: scale(1.2,1.2);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 2%;
+    align-items: center;
+}
+
+.welcome {
+    width: 80%;
+    height: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+}
+
+.intro {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 40%;
+}
+
+.intro h1 {
+    text-align: left;
+    line-height: .3em;
+}
+
+.intro h4 {
+    text-align: left;
+}
+
+.intro p {
+    text-align: left;
+}
+
+.images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    aspect-ratio: 1/1;
+}
+
+.code {
+    position: absolute;
+    width: 60%;
+}
+
+.iconsContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.iconsContainer img {
+    animation: noRotate 10s linear infinite;
+    animation-play-state: paused;
+}
+
+.iconsContainerRotate {
+    animation: rotate 10s linear forwards;
+}
+
+.iconsContainerRotate img{
+    animation: noRotate 10s linear backwards;
+}
+
+.iconsContainer.hovered {
+    animation-play-state: running;
+}
+
+.iconsContainer.hovered img{
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes noRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.icons1 {
+    position: absolute;
+    left: 2%;
+    width: 10%;
+    transition: ease .2s;
+}
+
+.icons2 {
+    position: absolute;
+    width: 10%;
+    left: 15%;
+    top: 15%;
+    transition: ease .2s;
+}
+
+.icons3 {
+    position: absolute;
+    width: 10%;
+    top: 2%;
+    transition: ease .2s;
+}
+
+.icons4 {
+    position: absolute;
+    width: 10%;
+    right: 15%;
+    top: 15%;
+    transition: ease .2s;
+}
+
+.icons5 {
+    position: absolute;
+    width: 10%;
+    right: 2%;
+    transition: ease .2s;
+}
+
+.icons6 {
+    position: absolute;
+    width: 10%;
+    right: 15%;
+    bottom: 15%;
+    transition: ease .2s;
+}
+
+.icons7 {
+    position: absolute;
+    width: 10%;
+    bottom: 2%;
+    transition: ease .2s;
+}
+
+.icons8 {
+    position: absolute;
+    width: 10%;
+    bottom: 15%;
+    left: 15%;
+    transition: ease .2s;
+}
+
+.icons1:hover {
+    width: 12%;
+    transform: rotate(180deg);
+}
+
+.icons2:hover {
+    width: 12%;
+}
+
+.icons3:hover {
+    width: 12%;
+}
+
+.icons4:hover {
+    width: 12%;
+}
+
+.icons5:hover {
+    width: 12%;
+}
+
+.icons6:hover {
+    width: 12%;
+}
+
+.icons7:hover {
+    width: 12%;
+}
+
+.icons8:hover {
+    width: 12%;
+}
+
+.about{
+    position: relative;
+    height: 16.5%;
+    width: 80%;
+}
+
+.textContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 15%;
+}
+
+.textContainer div {
+    width: 100%;
+}
+
+.about h1 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about h2 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+}
+
+.about p {
+    color: #00E4BE;
+    width: 90%;
+    text-align: justify;
+}
+
+.skills {
+    position: relative;
+    height: 16.5%;
+    width: 80%;
+}
+
+.skills h1 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills h4 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+}
+
+.skillsContainer {
+    width: 100%;
+    height: 60%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    align-items: center;
+    justify-content: center;
+}
+
+.gridItem{
+    width: 90%;
+    height: 90%;
+    border: 1px solid #00E4BE;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridDiv {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease .2s;
+    cursor: default;
+}
+
+.gridDiv:hover{
+    transform: scale(1.2,1.2);
+}
+
+.skillsContainer img {
+    width: 50%;
 }
