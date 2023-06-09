@@ -1,12 +1,12 @@
 const icons = {
-    javaScript: require('../img/javascript.png'),
-    html: require('../img/html.png'),
-    css: require('../img/css.png'),
-    git: require('../img/git.png'),
-    node: require('../img/node.png'),
-    postgres: require('../img/postgres.png'),
-    react: require('../img/react.png'),
-    redux: require('../img/redux.png'),  
+    javaScript: require('../img/icons/javascript.png'),
+    html: require('../img/icons/html.png'),
+    css: require('../img/icons/css.png'),
+    git: require('../img/icons/git.png'),
+    node: require('../img/icons/node.png'),
+    postgres: require('../img/icons/postgres.png'),
+    react: require('../img/icons/react.png'),
+    redux: require('../img/icons/redux.png'),  
 }
 
 export default icons

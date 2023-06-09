@@ -21,6 +21,14 @@
     background-color: #00317D;
 }
 
+.nav h1 {
+    position: absolute;
+    left: 5%;
+    color: #00E4BE;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .1em;
+}
+
 .title{
     display: flex;
     align-items: center;
@@ -360,3 +368,307 @@
 .skillsContainer img {
     width: 50%;
 }
+
+.projects{
+    position: relative;
+    height: 29%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.pokemon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+.pokemonText{
+    width: 28%;
+    margin-left: 2%;
+}
+
+.pokemonText h2 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+    line-height: 80%;
+    margin-bottom: .2em;
+}
+
+.pokemonText h4 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+    line-height: 80%;
+    margin-top: 0;
+}
+
+.pokemonText p {
+    color: #00E4BE;
+    width: 90%;
+    text-align: justify;
+}
+
+.pokemonGallery{
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+
+.poke1 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.poke1:hover{
+    opacity: 1;
+    width: 60%;
+}
+.poke2 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.poke2:hover{
+    opacity: 1;
+    width: 60%;
+}
+.poke3 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.poke3:hover{
+    opacity: 1;
+    width: 60%;
+}
+.poke4 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.poke4:hover{
+    opacity: 1;
+    width: 60%;
+}
+.poke5 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.poke5:hover{
+    opacity: 1;
+    width: 60%;
+}
+
+.byr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+.byrText{
+    width: 30%;
+   
+}
+
+.byrText h2 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+    line-height: 80%;
+    margin-bottom: .2em;
+}
+
+.byrText h4 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+    line-height: 80%;
+    margin-top: 0;
+}
+
+.byrText p {
+    color: #00E4BE;
+    width: 90%;
+    text-align: justify;
+}
+
+.byrGallery{
+    position: relative;
+    top: 3%;
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+
+.byr1 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.byr1:hover{
+    opacity: 1;
+    width: 60%;
+}
+.byr2 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.byr2:hover{
+    opacity: 1;
+    width: 60%;
+}
+.byr3 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.byr3:hover{
+    opacity: 1;
+    width: 60%;
+}
+.byr4 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.byr4:hover{
+    opacity: 1;
+    width: 60%;
+}
+.byr5 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.byr5:hover{
+    opacity: 1;
+    width: 60%;
+}
+
+.rym{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+.rymText{
+    width: 30%;
+   
+}
+
+.rymText h2 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+    line-height: 80%;
+    margin-bottom: .2em;
+}
+
+.rymText h4 {
+    background: -webkit-linear-gradient(#0269be, #00E4BE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify;
+    line-height: 80%;
+    margin-top: 0;
+}
+
+.rymText p {
+    color: #00E4BE;
+    width: 90%;
+    text-align: justify;
+}
+
+.rymGallery{
+    position: relative;
+    top: 3%;
+    display: flex;
+    width: 70%;
+    height: 100%;
+}
+
+.rym1 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.rym1:hover{
+    opacity: 1;
+    width: 60%;
+}
+.rym2 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.rym2:hover{
+    opacity: 1;
+    width: 60%;
+}
+.rym3 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.rym3:hover{
+    opacity: 1;
+    width: 60%;
+}
+.rym4 {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: ease .2s;
+    object-fit: cover;
+}
+.rym4:hover{
+    opacity: 1;
+    width: 60%;
+}
+

@@ -1,7 +1,10 @@
 import style from './Home.module.css'
 import * as scroll from 'react-scroll'
-import code from '../img/code.png'
+import code from '../img/icons/code.png'
 import icons from '../utils/icons'
+import poke from '../utils/poke'
+import byr from '../utils/byr'
+import rym from '../utils/rym'
 import { useState } from 'react'
 
 
@@ -29,11 +32,10 @@ const Home = () => {
     return (
         <div className={style.home}>
             <header className={style.nav}>
-                <h3 className={style.titleH3}>Mauricio Barca</h3>
+                <h1>Mauricio Barca</h1>
                 <div className={style.buttonContainer}>
                     <button>About</button>
                     <button>Skills</button>
-                    <button>Certificates</button>
                     <button>Projects</button>
                     <button>Contact</button>
                 </div>
@@ -144,7 +146,55 @@ const Home = () => {
                     </div>
                 </div>
                 <div className={style.title}>
-                    <h3 className={style.titleH3}>Certificates</h3>
+                    <h3 className={style.titleH3}>Projects</h3>
+                </div>
+                <div className={style.projects}>
+                    <div className={style.byr}>
+                        <div className={style.byrText}>
+                            <h2>BYR Real State</h2>
+                            <h4>In Progress</h4>
+                            <p>Features for the user: Search properties, filter, view details, live chat, contact form, send whatsapp messages directly from each property detail.
+                                <p>For the administrator: Admin control panel, upload, modify and delete properties, set featured properties to apperar at home page.</p>
+                            </p>
+                        </div>
+                        <div className={style.byrGallery}>
+                            <img className={style.byr1} src={byr.byr1} alt="" />
+                            <img className={style.byr2} src={byr.byr2} alt="" />
+                            <img className={style.byr3} src={byr.byr3} alt="" />
+                            <img className={style.byr4} src={byr.byr4} alt="" />
+                            <img className={style.byr5} src={byr.byr5} alt="" />
+                        </div>
+                    </div>
+                    <div className={style.pokemon}>
+                        <div className={style.pokemonGallery}>
+                            <img className={style.poke1} src={poke.poke1} alt="" />
+                            <img className={style.poke2} src={poke.poke2} alt="" />
+                            <img className={style.poke3} src={poke.poke3} alt="" />
+                            <img className={style.poke4} src={poke.poke4} alt="" />
+                            <img className={style.poke5} src={poke.poke5} alt="" />
+                        </div>
+                        <div className={style.pokemonText}>
+                            <h2>Pokemon</h2>
+                            <h4>Fullstack</h4>
+                            <p>Features: User registration and login with validated forms - pagination - combined filters, search and sorting - pokemon creator - edit or delete user pokemons - add pokemons to user's team.</p>
+                        </div>
+                    </div>
+                    <div className={style.rym}>
+                        <div className={style.rymText}>
+                            <h2>Rick and Morty</h2>
+                            <h4>Fullstack</h4>
+                            <p>Features: User login with validated forms, combined filters and sorting, search characters from API, add or delete favorites.</p>
+                        </div>
+                        <div className={style.rymGallery}>
+                            <img className={style.rym1} src={rym.rym1} alt="" />
+                            <img className={style.rym2} src={rym.rym2} alt="" />
+                            <img className={style.rym3} src={rym.rym3} alt="" />
+                            <img className={style.rym4} src={rym.rym4} alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div className={style.title}>
+                    <h3 className={style.titleH3}>Contact</h3>
                 </div>
             </div>
         </div>
