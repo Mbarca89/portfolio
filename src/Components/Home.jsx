@@ -1,10 +1,14 @@
 import style from './Home.module.css'
-import * as scroll from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import code from '../img/icons/code.png'
 import icons from '../utils/icons'
 import poke from '../utils/poke'
 import byr from '../utils/byr'
 import rym from '../utils/rym'
+import top from '../img/top.png'
+import gmail from '../img/gmail.png'
+import github from '../img/github.png'
+import linkedin from '../img/linkedin.png'
 import { useState } from 'react'
 
 
@@ -34,12 +38,21 @@ const Home = () => {
             <header className={style.nav}>
                 <h1>Mauricio Barca</h1>
                 <div className={style.buttonContainer}>
-                    <button>About</button>
-                    <button>Skills</button>
-                    <button>Projects</button>
-                    <button>Contact</button>
+                    <Link to='about' smooth={true} duration={500}>
+                        <button>About</button>
+                    </Link>
+                    <Link to='skills' smooth={true} duration={500}>
+                        <button>Skills</button>
+                    </Link>
+                    <Link to='projects' smooth={true} duration={500}>
+                        <button>Projects</button>
+                    </Link>
+                    <Link to='contact' smooth={true} duration={500}>
+                        <button>Contact</button>
+                    </Link>
                 </div>
             </header>
+            <img className={style.topArrow} src={top} alt="" onClick={scroll.scrollToTop} />
             <div className={style.body}>
                 <div className={style.welcome}>
                     <div className={style.intro}>
@@ -63,9 +76,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={style.title}>
+                <section className={style.title} id='about'>
                     <h3 className={style.titleH3}>About Me!</h3>
-                </div>
+                </section>
                 <div className={style.about}>
                     <div className={style.aboutContainer}>
                         <h1>Hello there! My name is Mauricio Barca</h1>
@@ -89,9 +102,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={style.title}>
+                <section className={style.title} id='skills'>
                     <h3 className={style.titleH3}>Skills</h3>
-                </div>
+                </section>
                 <div className={style.skills}>
                     <h1>This is what i've learned so far!</h1>
                     <div className={style.skillsContainer}>
@@ -145,17 +158,17 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={style.title}>
+                <section className={style.title} id='projects'>
                     <h3 className={style.titleH3}>Projects</h3>
-                </div>
+                </section>
                 <div className={style.projects}>
                     <div className={style.byr}>
                         <div className={style.byrText}>
                             <h2>BYR Real State</h2>
                             <h4>In Progress</h4>
-                            <p>Features for the user: Search properties, filter, view details, live chat, contact form, send whatsapp messages directly from each property detail.
-                                <p>For the administrator: Admin control panel, upload, modify and delete properties, set featured properties to apperar at home page.</p>
-                            </p>
+                            <p>Features for the user: Search properties, filter, view details, live chat, contact form, send whatsapp messages directly from each property detail.</p>
+                            <p>For the administrator: Admin control panel, upload, modify and delete properties, set featured properties to apperar at home page.</p>
+
                         </div>
                         <div className={style.byrGallery}>
                             <img className={style.byr1} src={byr.byr1} alt="" />
@@ -193,8 +206,29 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={style.title}>
+                <section className={style.title} id='contact'>
                     <h3 className={style.titleH3}>Contact</h3>
+                </section>
+                <div className={style.contactContainer}>
+                    <h2>Thank you for visiting my portfolio!</h2>
+                    <div className={style.contactText}>
+                        <p>Sometimes it can be really difficult to appreciate the real value of a person through words. So please feel free to contact me if you want to know more, you won't regret it!</p>
+                    </div>
+                    <div className={style.contactInfo}>
+                        <a href='mailto:mauriciobarca1989@gmail.com' >
+                            <img src={gmail} alt=""/>
+                            <p>Mauriciobarca1989@gmail.com</p>
+                        </a>
+                        <a href="https://github.com/Mbarca89"  target="_blank" rel="noreferrer noopener">
+                            <img src={github} alt="" />
+                            <p>/Mbarca89</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mbarca89/" target="_blank" rel="noreferrer noopener">
+                            <img src={linkedin} alt="" />
+                            <p>/mbarca89</p>
+
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
