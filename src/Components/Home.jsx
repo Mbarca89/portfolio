@@ -217,7 +217,7 @@ const Home = () => {
                     <div className={style.contactInfo}>
                         <a href='mailto:mauriciobarca1989@gmail.com' >
                             <img src={gmail} alt=""/>
-                            <p>Mauriciobarca1989@gmail.com</p>
+                            <p>mauriciobarca1989@gmail.com</p>
                         </a>
                         <a href="https://github.com/Mbarca89"  target="_blank" rel="noreferrer noopener">
                             <img src={github} alt="" />
