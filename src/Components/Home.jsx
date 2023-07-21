@@ -9,7 +9,9 @@ import top from '../img/top.png'
 import gmail from '../img/gmail.png'
 import github from '../img/github.png'
 import linkedin from '../img/linkedin.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Home = () => {
@@ -32,6 +34,10 @@ const Home = () => {
             };
         }
     };
+
+    useEffect(()=> {
+        AOS.init({duration: 500})
+    },[])
 
     return (
         <div className={style.home}>
@@ -63,9 +69,10 @@ const Home = () => {
                     </div>
                     <div className={style.images}>
                         <img className={style.code} src={code} alt="" />
-                        <div className={`${style.iconsContainer} ${isHovered ? style.hovered : ''}`} onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave} style={getRotationStyles()}>
-                            <img className={style.icons1} src={icons.css} alt="" />
+                        {/* <div className={`${style.iconsContainer} ${isHovered ? style.hovered : ''}`} onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave} style={getRotationStyles()}> */}
+                            <div className={`${style.iconsContainer} ${style.hovered}`}>
+                            <img className={style.icons1} src={icons.css} alt=""/>
                             <img className={style.icons2} src={icons.javaScript} alt="" />
                             <img className={style.icons3} src={icons.react} alt="" />
                             <img className={style.icons4} src={icons.redux} alt="" />
@@ -79,23 +86,24 @@ const Home = () => {
                 <section className={style.title} id='about'>
                     <h3 className={style.titleH3}>About Me!</h3>
                 </section>
-                <div className={style.about}>
+                
+                <div className={style.about} data-aos='fade-up'>
                     <div className={style.aboutContainer}>
                         <h1>Hello there! My name is Mauricio Barca</h1>
                         <div className={style.textContainer}>
-                            <div>
+                            <div data-aos='fade-right'>
                                 <h2>Who am I?</h2>
                                 <p>I am a person passionate about technology and always motivated to face new challenges. This is what leads me to this vast world of web development.</p>
                             </div>
-                            <div>
+                            <div data-aos='fade-left'>
                                 <h2>My strengths</h2>
                                 <p>Adaptation and learning! These are the two strong points that always accompany me in any work environment. I adapt to new tasks and people, and I learn the necessary tools for day-to-day work.</p>
                             </div>
-                            <div>
+                            <div data-aos='fade-right'>
                                 <h2>What am I looking for:</h2>
                                 <p>I am looking for a new challenge! To learn and grow professionally in a new environment, meet new people, make new friendships, and prove to myself that I am capable of anything!</p>
                             </div>
-                            <div>
+                            <div data-aos='fade-left'>
                                 <h2>The best of me:</h2>
                                 <p> I am completely responsible in everything I do, motivated and passionate about doing what I love, always seeking that personal satisfaction of solving a problem and self-improvement.</p>
                             </div>
@@ -105,52 +113,64 @@ const Home = () => {
                 <section className={style.title} id='skills'>
                     <h3 className={style.titleH3}>Skills</h3>
                 </section>
-                <div className={style.skills}>
+                <div className={style.skills} data-aos='fade-up'>
                     <h1>This is what i've learned so far!</h1>
                     <div className={style.skillsContainer}>
-                        <div className={style.gridItem}>
+                        <div className={style.gridItem}  data-aos='flip-left'>
                             <div className={style.gridDiv}>
                                 <img src={icons.html} alt="" />
                                 <h4>HTML</h4>
                             </div>
                         </div>
-                        <div className={style.gridItem}>
+                        <div className={style.gridItem} data-aos='flip-left' data-aos-delay='100'>
                             <div className={style.gridDiv}>
                                 <img src={icons.css} alt="" />
                                 <h4>CSS</h4>
                             </div>
                         </div>
-                        <div className={style.gridItem}>
+                        <div className={style.gridItem} data-aos='flip-left' data-aos-delay='200'>
                             <div className={style.gridDiv}>
                                 <img src={icons.javaScript} alt="" />
                                 <h4>JAVASCRIPT</h4>
                             </div>
                         </div>
-                        <div className={style.gridItem}>
+                        <div className={style.gridItem} data-aos='flip-left' data-aos-delay='300'>
+                            <div className={style.gridDiv}>
+                                <img src={icons.typeScript} alt="" />
+                                <h4>TYPESCRIPT</h4>
+                            </div>
+                        </div>
+                        <div className={style.gridItem}  data-aos='flip-left'>
                             <div className={style.gridDiv}>
                                 <img src={icons.react} alt="" />
                                 <h4>REACT</h4>
                             </div>
                         </div>
-                        <div className={style.gridItem}>
+                        <div className={style.gridItem} data-aos='flip-left'  data-aos-delay='100'>
                             <div className={style.gridDiv}>
                                 <img src={icons.redux} alt="" />
                                 <h4>REDUX</h4>
                             </div>
                         </div>
-                        <div className={style.gridItem}>
+                        <div className={style.gridItem} data-aos='flip-left' data-aos-delay='200'>
                             <div className={style.gridDiv}>
                                 <img src={icons.node} alt="" />
                                 <h4>NODE</h4>
                             </div>
                         </div>
-                        <div className={style.gridItem}>
+                        <div className={style.gridItem} data-aos='flip-left' data-aos-delay='300'>
                             <div className={style.gridDiv}>
                                 <img src={icons.postgres} alt="" />
                                 <h4>POSTGRESQL</h4>
                             </div>
                         </div>
-                        <div className={style.gridItem}>
+                        <div className={style.gridItem} data-aos='flip-left'>
+                            <div className={style.gridDiv}>
+                                <img src={icons.mongo} alt="" />
+                                <h4>MONGODB</h4>
+                            </div>
+                        </div>
+                        <div className={style.gridItem} data-aos='flip-left' data-aos-delay='100'>
                             <div className={style.gridDiv}>
                                 <img src={icons.git} alt="" />
                                 <h4>GIT</h4>

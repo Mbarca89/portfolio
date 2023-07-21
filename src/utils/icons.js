@@ -7,6 +7,8 @@ const icons = {
     postgres: require('../img/icons/postgres.png'),
     react: require('../img/icons/react.png'),
     redux: require('../img/icons/redux.png'),  
+    mongo: require('../img/icons/mongo.png'),
+    typeScript: require('../img/icons/typescript.png')
 }
 
 export default icons

@@ -10,38 +10,7 @@
     overflow: hidden;
 }
 
-.topArrow {
-    position: fixed;
-    width: 3%;
-    bottom: 4%;
-    right: 4%;
-    cursor: pointer;
-    z-index: 10;
-}
-.topArrow:hover{
-    width: 3.2%;
-}
-
-.nav {
-    top: .5%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 1.5%;
-    background-color: #00317D;
-}
-
-.nav h1 {
-    position: absolute;
-    left: 5%;
-    color: #00E4BE;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: .1em;
-}
-
-.title{
+.title {
     display: flex;
     align-items: center;
     width: 100%;
@@ -58,18 +27,8 @@
     font-size: 1.5em;
 }
 
-.buttonContainer {
-    position: absolute;
-    right: 0;
-    display: flex;
-    width: 60%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-}
 
- button {
+button {
     background-color: transparent;
     border: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -77,10 +36,6 @@
     width: auto;
     font-size: 1em;
     cursor: pointer;
-}
-
- button:hover {
-    transform: scale(1.2,1.2);
 }
 
 .body {
@@ -91,47 +46,6 @@
     height: 100%;
     top: 2%;
     align-items: center;
-}
-
-.welcome {
-    width: 80%;
-    height: 15%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10%;
-    justify-content: center;
-}
-
-.intro {
-    background: -webkit-linear-gradient(#0269be, #00E4BE);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: 40%;
-}
-
-.intro h1 {
-    text-align: left;
-    line-height: .3em;
-}
-
-.intro h4 {
-    text-align: left;
-}
-
-.intro p {
-    text-align: left;
-}
-
-.images {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    aspect-ratio: 1/1;
 }
 
 .code {
@@ -150,47 +64,6 @@
     justify-content: center;
     animation: rotate 10s linear infinite;
     animation-play-state: paused;
-}
-
-.iconsContainer img {
-    animation: noRotate 10s linear infinite;
-    animation-play-state: paused;
-}
-
-.iconsContainerRotate {
-    animation: rotate 10s linear forwards;
-}
-
-.iconsContainerRotate img{
-    animation: noRotate 10s linear backwards;
-}
-
-.iconsContainer.hovered {
-    animation-play-state: running;
-}
-
-.iconsContainer.hovered img{
-    animation-play-state: running;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes noRotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(-360deg);
-    }
 }
 
 .icons1 {
@@ -253,81 +126,56 @@
     transition: ease .2s;
 }
 
-.icons1:hover {
-    width: 12%;
-    transform: rotate(180deg);
+.iconsContainer img {
+    animation: noRotate 10s linear infinite;
+    animation-play-state: paused;
 }
 
-.icons2:hover {
-    width: 12%;
+.iconsContainerRotate {
+    animation: rotate 10s linear forwards;
 }
 
-.icons3:hover {
-    width: 12%;
+.iconsContainerRotate img {
+    animation: noRotate 10s linear backwards;
 }
 
-.icons4:hover {
-    width: 12%;
+.iconsContainer.hovered {
+    animation-play-state: running;
 }
 
-.icons5:hover {
-    width: 12%;
+.iconsContainer.hovered img {
+    animation-play-state: running;
 }
 
-.icons6:hover {
-    width: 12%;
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.icons7:hover {
-    width: 12%;
+@keyframes noRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
-.icons8:hover {
-    width: 12%;
-}
-
-.about{
-    position: relative;
-    height: 16.5%;
-    width: 80%;
-}
-
-.textContainer {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    row-gap: 15%;
-}
 
 .textContainer div {
     width: 100%;
 }
 
-.about h1 {
-    background: -webkit-linear-gradient(#0269be, #00E4BE);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.skillsContainer img {
+    width: 50%;
 }
 
-.about h2 {
-    background: -webkit-linear-gradient(#0269be, #00E4BE);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: justify;
-}
-
-.about p {
-    color: #00E4BE;
-    width: 90%;
-    text-align: justify;
-}
-
-.skills {
-    position: relative;
-    height: 16.5%;
-    width: 80%;
-}
 
 .skills h1 {
     background: -webkit-linear-gradient(#0269be, #00E4BE);
@@ -344,17 +192,7 @@
     text-align: justify;
 }
 
-.skillsContainer {
-    width: 100%;
-    height: 60%;
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    align-items: center;
-    justify-content: center;
-}
-
-.gridItem{
+.gridItem {
     width: 90%;
     height: 90%;
     border: 1px solid #00E4BE;
@@ -362,44 +200,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.gridDiv {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: ease .2s;
-    cursor: default;
-}
-
-.gridDiv:hover{
-    transform: scale(1.2,1.2);
-}
-
-.skillsContainer img {
-    width: 50%;
-}
-
-.projects{
-    position: relative;
-    height: 29%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 3%;
-}
-
-.pokemon{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 30%;
-}
-
-.pokemonText{
-    width: 28%;
-    margin-left: 2%;
 }
 
 .pokemonText h2 {
@@ -428,12 +228,6 @@
     text-align: justify;
 }
 
-.pokemonGallery{
-    position: relative;
-    display: flex;
-    width: 70%;
-    height: 100%;
-}
 
 .poke1 {
     width: 0;
@@ -442,10 +236,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.poke1:hover{
+
+.poke1:hover {
     opacity: 1;
     width: 60%;
 }
+
 .poke2 {
     width: 0;
     flex-grow: 1;
@@ -453,10 +249,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.poke2:hover{
+
+.poke2:hover {
     opacity: 1;
     width: 60%;
 }
+
 .poke3 {
     width: 0;
     flex-grow: 1;
@@ -464,10 +262,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.poke3:hover{
+
+.poke3:hover {
     opacity: 1;
     width: 60%;
 }
+
 .poke4 {
     width: 0;
     flex-grow: 1;
@@ -475,10 +275,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.poke4:hover{
+
+.poke4:hover {
     opacity: 1;
     width: 60%;
 }
+
 .poke5 {
     width: 0;
     flex-grow: 1;
@@ -486,22 +288,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.poke5:hover{
+
+.poke5:hover {
     opacity: 1;
     width: 60%;
 }
 
-.byr{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 30%;
-}
-
-.byrText{
-    width: 30%;
-   
-}
 
 .byrText h2 {
     background: -webkit-linear-gradient(#0269be, #00E4BE);
@@ -529,14 +321,6 @@
     text-align: justify;
 }
 
-.byrGallery{
-    position: relative;
-    top: 3%;
-    display: flex;
-    width: 70%;
-    height: 100%;
-}
-
 .byr1 {
     width: 0;
     flex-grow: 1;
@@ -544,10 +328,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.byr1:hover{
+
+.byr1:hover {
     opacity: 1;
     width: 60%;
 }
+
 .byr2 {
     width: 0;
     flex-grow: 1;
@@ -555,10 +341,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.byr2:hover{
+
+.byr2:hover {
     opacity: 1;
     width: 60%;
 }
+
 .byr3 {
     width: 0;
     flex-grow: 1;
@@ -566,10 +354,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.byr3:hover{
+
+.byr3:hover {
     opacity: 1;
     width: 60%;
 }
+
 .byr4 {
     width: 0;
     flex-grow: 1;
@@ -577,10 +367,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.byr4:hover{
+
+.byr4:hover {
     opacity: 1;
     width: 60%;
 }
+
 .byr5 {
     width: 0;
     flex-grow: 1;
@@ -588,22 +380,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.byr5:hover{
+
+.byr5:hover {
     opacity: 1;
     width: 60%;
 }
 
-.rym{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    height: 30%;
-}
-
-.rymText{
-    width: 30%;
-   
-}
 
 .rymText h2 {
     background: -webkit-linear-gradient(#0269be, #00E4BE);
@@ -631,14 +413,6 @@
     text-align: justify;
 }
 
-.rymGallery{
-    position: relative;
-    top: 3%;
-    display: flex;
-    width: 70%;
-    height: 100%;
-}
-
 .rym1 {
     width: 0;
     flex-grow: 1;
@@ -646,10 +420,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.rym1:hover{
+
+.rym1:hover {
     opacity: 1;
     width: 60%;
 }
+
 .rym2 {
     width: 0;
     flex-grow: 1;
@@ -657,10 +433,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.rym2:hover{
+
+.rym2:hover {
     opacity: 1;
     width: 60%;
 }
+
 .rym3 {
     width: 0;
     flex-grow: 1;
@@ -668,10 +446,12 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.rym3:hover{
+
+.rym3:hover {
     opacity: 1;
     width: 60%;
 }
+
 .rym4 {
     width: 0;
     flex-grow: 1;
@@ -679,62 +459,315 @@
     transition: ease .2s;
     object-fit: cover;
 }
-.rym4:hover{
+
+.rym4:hover {
     opacity: 1;
     width: 60%;
 }
 
-.contactContainer{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 15%;
-}
-
-.contactText {
-    width: 50%;
-}
-
-.contactContainer p {
-    color: #00E4BE;
-    width: 90%;
-    text-align: justify;
-}
-
-.contactContainer h2 {
-    background: -webkit-linear-gradient(#0269be, #00E4BE);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: justify;
-}
-
-.contactInfo{
-    width: 80%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 6%;
-    row-gap: 10%;
-}
-
-.contactInfo img {
-    width: 20%;
-}
-
-.contactInfo div{
+.contactInfo div {
     display: flex;
     width: 20%;
 }
 
-.contactInfo a{
+.contactInfo a {
     width: 50%;
     display: flex;
     text-decoration: none;
 }
 
-@media screen and (max-width:45em) {
+@media screen and (min-width:577px) {
+    .topArrow {
+        position: fixed;
+        width: 3%;
+        bottom: 4%;
+        right: 4%;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .topArrow:hover {
+        width: 3.2%;
+    }
+
+    .nav {
+        top: .5%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 1.5%;
+        background-color: #00317D;
+    }
+
+    .nav h1 {
+        position: absolute;
+        left: 5%;
+        color: #00E4BE;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: .1em;
+    }
+
+    .buttonContainer {
+        position: absolute;
+        right: 0;
+        display: flex;
+        width: 60%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    button:hover {
+        transform: scale(1.2, 1.2);
+    }
+
+    .welcome {
+        width: 80%;
+        height: 15%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10%;
+        justify-content: center;
+    }
+
+    .intro {
+        background: -webkit-linear-gradient(#0269be, #00E4BE);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 40%;
+    }
+
+    .intro h1 {
+        text-align: left;
+        line-height: .3em;
+    }
+
+    .intro h4 {
+        text-align: left;
+    }
+
+    .intro p {
+        text-align: left;
+    }
+
+    .images {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        aspect-ratio: 1/1;
+    }
+
+    .icons1:hover {
+        width: 12%;
+        transform: rotate(180deg);
+    }
+
+    .icons2:hover {
+        width: 12%;
+    }
+
+    .icons3:hover {
+        width: 12%;
+    }
+
+    .icons4:hover {
+        width: 12%;
+    }
+
+    .icons5:hover {
+        width: 12%;
+    }
+
+    .icons6:hover {
+        width: 12%;
+    }
+
+    .icons7:hover {
+        width: 12%;
+    }
+
+    .icons8:hover {
+        width: 12%;
+    }
+
+    .about {
+        position: relative;
+        height: 16.5%;
+        width: 80%;
+    }
+
+    .textContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15%;
+    }
+
+    .about h1 {
+        background: -webkit-linear-gradient(#0269be, #00E4BE);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .about h2 {
+        background: -webkit-linear-gradient(#0269be, #00E4BE);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: justify;
+    }
+
+    .about p {
+        color: #00E4BE;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .skills {
+        position: relative;
+        height: 16.5%;
+        width: 80%;
+    }
+
+    .skillsContainer {
+        width: 100%;
+        height: 60%;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gridDiv {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease .2s;
+        cursor: default;
+    }
+
+    .gridDiv:hover {
+        transform: scale(1.2, 1.2);
+    }
+
+    .projects {
+        position: relative;
+        height: 29%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    .pokemon {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+    }
+
+    .pokemonText {
+        width: 28%;
+        margin-left: 2%;
+    }
+
+    .pokemonGallery {
+        position: relative;
+        display: flex;
+        width: 70%;
+        height: 100%;
+    }
+
+    .byr {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+    }
+
+    .byrText {
+        width: 30%;
+
+    }
+
+    .byrGallery {
+        position: relative;
+        top: 3%;
+        display: flex;
+        width: 70%;
+        height: 100%;
+    }
+
+    .rym {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+    }
+
+    .rymText {
+        width: 30%;
+    }
+
+    .rymGallery {
+        position: relative;
+        top: 3%;
+        display: flex;
+        width: 70%;
+        height: 100%;
+    }
+
+    .contactContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 15%;
+    }
+
+    .contactText {
+        width: 50%;
+    }
+
+    .contactContainer p {
+        color: #00E4BE;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .contactContainer h2 {
+        background: -webkit-linear-gradient(#0269be, #00E4BE);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: justify;
+    }
+
+    .contactInfo {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6%;
+        row-gap: 10%;
+    }
+
+    .contactInfo img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:576px) {
     .nav {
         top: .5%;
         position: absolute;
@@ -743,7 +776,7 @@
         height: 1.5%;
         background-color: #00317D;
     }
-    
+
     .nav h1 {
         position: absolute;
         bottom: 10%;
@@ -756,7 +789,7 @@
     .buttonContainer {
         position: absolute;
         right: 0;
-        top : 25%;
+        top: 25%;
         display: flex;
         width: 100%;
         height: 100%;
@@ -764,8 +797,9 @@
         justify-content: center;
         gap: 5%;
     }
+
     button:hover {
-        transform: scale(1,1);
+        transform: scale(1, 1);
     }
 
     .welcome {
@@ -786,20 +820,20 @@
         -webkit-text-fill-color: transparent;
         width: 90%;
     }
-    
+
     .intro h1 {
         text-align: left;
         line-height: .3em;
     }
-    
+
     .intro h4 {
         text-align: left;
     }
-    
+
     .intro p {
         text-align: left;
     }
-    
+
     .images {
         position: relative;
         display: flex;
@@ -809,7 +843,7 @@
         aspect-ratio: 1/1;
     }
 
-    .about{
+    .about {
         position: relative;
         height: 16.5%;
         width: 90%;
@@ -856,7 +890,7 @@
         height: 60%;
         margin-top: 15%;
         display: grid;
-        grid-template-columns: repeat(3,33%);
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
         justify-content: center;
     }
@@ -867,11 +901,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: ease .2s;
         cursor: default;
     }
 
-    .projects{
+    .gridDiv h4 {
+        margin: 0;
+    }
+
+    .projects {
         position: relative;
         height: 29%;
         width: 90%;
@@ -880,18 +917,18 @@
         gap: 3%;
     }
 
-    .byr{
+    .byr {
         width: 100%;
         display: flex;
         flex-direction: column;
         height: 30%;
     }
-    
-    .byrText{
+
+    .byrText {
         width: 100%;
     }
 
-    .byrGallery{
+    .byrGallery {
         position: relative;
         top: 3%;
         display: flex;
@@ -899,36 +936,38 @@
         height: 100%;
     }
 
-    .pokemon{
+    .pokemon {
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
         height: 30%;
     }
-    
-    .pokemonText{
+
+    .pokemonText {
         width: 100%;
         margin-left: 2%;
     }
-    .pokemonGallery{
+
+    .pokemonGallery {
         position: relative;
         display: flex;
         width: 100%;
         height: 100%;
     }
 
-    .rym{
+    .rym {
         width: 100%;
         display: flex;
         flex-direction: column;
         height: 30%;
     }
-    
-    .rymText{
+
+    .rymText {
         width: 100%;
-       
+
     }
-    .rymGallery{
+
+    .rymGallery {
         position: relative;
         top: 3%;
         display: flex;
@@ -936,24 +975,25 @@
         height: 100%;
     }
 
-    .contactContainer{
+    .contactContainer {
         position: relative;
         display: flex;
         flex-direction: column;
         width: 90%;
         height: 15%;
     }
-    
+
     .contactText {
         width: 100%;
     }
-    
+
     .contactContainer p {
         color: #00E4BE;
         width: 90%;
         text-align: justify;
     }
-    .contactInfo{
+
+    .contactInfo {
         width: 90%;
         height: 50%;
         display: flex;
@@ -961,7 +1001,7 @@
         margin-top: 6%;
         row-gap: 10%;
     }
-    
+
     .contactInfo img {
         width: 50%;
     }
@@ -983,7 +1023,8 @@
         cursor: pointer;
         z-index: 10;
     }
-    .topArrow:hover{
+
+    .topArrow:hover {
         width: 5%;
     }
 
