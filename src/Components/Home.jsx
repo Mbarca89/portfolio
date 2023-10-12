@@ -45,8 +45,6 @@ const Home = () => {
         setProject(event.target.name)
     }
 
-    console.log(project)
-
     return (
         <div className={style.home}>
             <header className={style.nav}>
@@ -160,6 +158,12 @@ const Home = () => {
                                 <h4>REDUX</h4>
                             </div>
                         </div>
+                        <div className={style.gridItem} data-aos='flip-left' data-aos-delay='100'>
+                            <div className={style.gridDiv}>
+                                <img src={icons.angular} alt="" />
+                                <h4>ANGULAR</h4>
+                            </div>
+                        </div>
                         <div className={style.gridItem} data-aos='flip-left' data-aos-delay='200'>
                             <div className={style.gridDiv}>
                                 <img src={icons.node} alt="" />
@@ -208,6 +212,7 @@ const Home = () => {
                                         <p>An individual project made for a friend to gain some practice. Still working on it.
                                             A site for a real state company that features filters, contact form, live chat, details view with image gallery. Also for the owner, an admin panel that allows them to publish properties with images, and details, edit and delete properties and select featured properties to appear at the home page.</p>
                                         <a href="https://github.com/Mbarca89/BYR-TS-Client">Repository</a>
+                                        <a href="https://inmobiliariabyr.com.ar/">Deploy</a>
                                         <div className={style.techStack}>
                                             <img src={icons.typeScript} alt="" />
                                             <img src={icons.react} alt="" />
