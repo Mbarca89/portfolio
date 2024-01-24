@@ -1,0 +1,93 @@
+.contactInfo div {
+    display: flex;
+    width: 20%;
+}
+
+.contactInfo a {
+    width: 50%;
+    display: flex;
+    text-decoration: none;
+}
+
+@media screen and (min-width:577px) {
+    .contactContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 15%;
+    }
+
+    .contactText {
+        width: 50%;
+    }
+
+    .contactContainer p {
+        color: #00E4BE;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .contactContainer h2 {
+        background: -webkit-linear-gradient(#0269be, #00E4BE);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: justify;
+    }
+
+    .contactInfo {
+        width: 80%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6%;
+        row-gap: 10%;
+    }
+
+    .contactInfo img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .contactContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 15%;
+    }
+
+    .contactText {
+        width: 100%;
+    }
+
+    .contactContainer p {
+        color: #00E4BE;
+        width: 90%;
+        text-align: justify;
+    }
+
+    .contactInfo {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 6%;
+        row-gap: 10%;
+    }
+
+    .contactInfo img {
+        width: 50%;
+    }
+
+    .contactContainer h2 {
+        background: -webkit-linear-gradient(#0269be, #00E4BE);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: justify;
+        width: 90%;
+    }
+}

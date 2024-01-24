@@ -1,4 +1,5 @@
 const icons = {
+    java: require("../img/icons/java.png"),
     javaScript: require('../img/icons/javascript.png'),
     html: require('../img/icons/html.png'),
     css: require('../img/icons/css.png'),
